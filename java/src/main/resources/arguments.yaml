@@ -29,7 +29,7 @@ ACCESS_TOKEN: null
 # Optional Configurations:
 # =========================
 # Topic to publish/subscribe to (default: /event/Order_Event__e)
-TOPIC: null
+TOPIC: /data/Employee__ChangeEvent
 # Number of Events to publish in single or separate batches (default: 5)
 # Used only by PublishStream.java
 NUMBER_OF_EVENTS_TO_PUBLISH: null
@@ -45,7 +45,7 @@ REPLAY_PRESET: null
 REPLAY_ID: null
 # Flag to enable/disable processing of bitmap fields in ChangeEventHeader in Subscribe and
 # ManagedSubscribe examples for change data capture events (default: false)
-PROCESS_CHANGE_EVENT_HEADER_FIELDS: null
+PROCESS_CHANGE_EVENT_HEADER_FIELDS: true
 
 # ManagedSubscribe RPC parameters
 # For ManagedSubscribe.java, either supply the developer name or the ID of ManagedEventSubscription
